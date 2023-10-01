@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <main
+        class="w-[18.75rem] h-[27.4375rem] box-shadow p-5 rounded-[1rem] mx-auto flex flex-col gap-4">
+        <div class="flex justify-between items-center">
+            <div class="flex gap-1 items-center">
+                <div>
+                    <img src="./helpmeout.png" alt="Logo" />
+                </div>
+                <h1 class="font-bold text-[#120B48] font-Sora text-[1rem]"> HelpMeOut </h1>
+            </div>
+            <div class="flex gap-2 items-center">
+                <div>
+                    <img src="./setting-2.svg" alt="Setting" />
+                </div>
+                <div>
+                    <img src="./close-circle.svg" alt="Close" />
+                </div>
+            </div>
+        </div>
+        <p class="text-[#413C6D] font-Work_Sans text-[.875rem]"> This extension helps you record and
+            share help videos with ease. </p>
+        <div id="recordForm" class="flex flex-col gap-4">
+            <fieldset class="flex gap-6 justify-center font-Work_Sans relative">
+                <!-- input container -->
+                <div class="flex flex-col justify-center relative">
+                    <input type="radio" name="target" value="fullscreen" id="fullscreen"
+                        class="peer absolute w-full h-full z-20 top-0 bottom-0 opacity-0 cursor-pointer" />
+                    <div
+                        class="flex flex-col gap-2 justify-center opacity-50 peer-checked:opacity-100">
+                        <div class="flex justify-center">
+                            <img src="./monitor.svg" alt="Fullscreen" />
+                        </div>
+                        <label htmlFor="fullscreen"
+                            class="text-[.875rem] text-[#120B48] font-Work_Sans font-semibold peer-checked:font-semibold">
+                            Full screen </label>
+                    </div>
+                </div>
+                <!-- {/* input container */} -->
+                <div class="flex flex-col justify-center relative">
+                    <input type="radio" name="target" value="currenttab" id="currenttab"
+                        class="peer absolute w-full h-full z-20 top-0 bottom-0 opacity-0 cursor-pointer"
+                        checked />
+                    <div
+                        class="flex flex-col gap-2 justify-center opacity-50 peer-checked:opacity-100">
+                        <div class="flex justify-center">
+                            <img src="./copy.svg" alt="Current Tab" />
+                        </div>
+                        <label htmlFor="currenttab"
+                            class="text-[.875rem] font-Work_Sans font-semibold peer-checked:font-semibold text-[#120B48]">
+                            Current Tab </label>
+                    </div>
+                </div>
+            </fieldset>
+            <!-- {/* MIC and Camera */} -->
+            <fieldset class="flex flex-col gap-3">
+                <div
+                    class="border-[1px] border-solid border-[#100A42] flex justify-between p-4 rounded-[.75rem]">
+                    <!-- {/* Icon and name */} -->
+                    <div class="flex gap-4">
+                        <div>
+                            <img src="./video-camera.svg" alt="Camera" />
+                        </div>
+                        <span class="text-[#100A42] text-[.875rem] font-medium font-Work_Sans">
+                            Camera </span>
+                    </div>
+                    <!-- {/* Toggle */} -->
+                    <label>
+                        <input type="checkbox" class="invisible hidden cursor-pointer peer" />
+                        <span
+                            class="block relative border-solid border-[1px] border-[#120B48] cursor-pointer  w-[2.25rem] h-[1.25rem] bg-[#fff] rounded-[.75rem] custom-transition peer-checked:border-1 peer-checked:border-[#120B48] peer-checked:border-solid peer-checked:bg-[#120B48] before:content-[''] before:absolute before:top-[.5px] before:left-[1px] before:bg-[#120B48] before:w-[1rem] before:h-[1rem] before:rounded-full before:transition before:duration-[.5s] peer-checked:before:bg-[#fff] peer-checked:before:translate-x-[16px]"></span>
+                    </label>
+                </div>
+                <!-- {/* Microphone */} -->
+                <div
+                    class="border-[1px] border-solid border-[#100A42] flex justify-between p-4 rounded-[.75rem]">
+                    <!-- {/* Icon and name */} -->
+                    <div class="flex gap-4">
+                        <div>
+                            <img src="./microphone.svg" alt="Microphone" />
+                        </div>
+                        <span class="text-[#100A42] text-[.875rem] font-medium font-Work_Sans">
+                            Microphone </span>
+                    </div>
+                    <!-- {/* Toggle */} -->
+                    <label>
+                        <input class="invisible hidden cursor-pointer peer" type="checkbox" />
+                        <span
+                            class="block relative border-solid border-[1px] border-[#120B48] cursor-pointer  w-[2.25rem] h-[1.25rem] bg-[#fff] rounded-[.75rem] custom-transition peer-checked:border-1 peer-checked:border-[#120B48] peer-checked:border-solid peer-checked:bg-[#120B48] before:content-[''] before:absolute before:top-[.5px] before:left-[1px] before:bg-[#120B48] before:w-[1rem] before:h-[1rem] before:rounded-full before:transition before:duration-[.5s] peer-checked:before:bg-[#fff] peer-checked:before:translate-x-[16px]"></span>
+                    </label>
+                </div>
+            </fieldset>
+            <button
+                class="hover:bg-[#120b48c9] bg-[#120B48] p-4 text-[#FAFDFF] rounded-[.75rem] font-medium font-Work_Sans text-[1rem] active:scale-95"
+                id="start_video"> Start Recording </button>
+            <button
+                class="hover:bg-[#120b48c9] bg-[#120B48] p-4 text-[#FAFDFF] rounded-[.75rem] font-medium font-Work_Sans text-[1rem] active:scale-95"
+                id="stop_video"> Stop Recording </button>
+        </div>
+    </main>
+    <script src="./popup.js"></script>
+</body>
+</html>

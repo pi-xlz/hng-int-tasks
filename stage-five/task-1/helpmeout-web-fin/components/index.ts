@@ -1,0 +1,12 @@
+export { default as Logo } from './Logo';
+export { default as Navbar } from './Navbar';
+export { default as Feat } from './Feature';
+export { default as EmailInput } from './EmailInput';
+export { default as CopyUrl } from './CopyUrl';
+export { default as ShareSocials } from './Socials';
+export { default as Transcript } from './Transcript';
+export { default as SaveButton } from './SaveButton';
+export { default as Modal } from './Modal';
+export { default as Video } from './Video';
+export { default as Profile } from './Profile';
+export { default as SearchBar } from './SearchBar';

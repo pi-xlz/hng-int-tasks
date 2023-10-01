@@ -1,0 +1,59 @@
+.main {
+  background: var(--clr-background-200);
+  padding: 3rem 7rem;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    h2 {
+      font-size: var(--fs-sm);
+      font-weight: 400;
+
+      span {
+        color: var(--clr-accent-200);
+        font-weight: 500;
+      }
+    }
+
+    .header__video-name {
+      color: var(--clr-text-200);
+      font-size: 2.5rem;
+      font-family: var(--font-sora);
+      font-weight: 600;
+      display: flex;
+      gap: 1.875rem;
+      align-items: center;
+    }
+  }
+
+  .video {
+    margin-top: 2rem;
+  }
+
+  .share {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1.5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+
+    .email {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+      width: 100%;
+
+      div {
+        flex-basis: 50%;
+      }
+    }
+
+    .socials {
+      align-self: flex-start;
+    }
+  }
+}

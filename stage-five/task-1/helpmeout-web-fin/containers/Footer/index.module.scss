@@ -1,0 +1,33 @@
+.footer {
+  padding: 7rem;
+  background: var(--clr-primary-100);
+
+  .footer__container {
+    display: flex;
+    gap: 18rem;
+
+    .footer__sections {
+      display: flex;
+      justify-content: space-between;
+      gap: 12rem;
+
+      .footer__section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h4 {
+          font-family: var(--font-sora);
+          font-weight: 600;
+          color: var(--clr-background-200);
+        }
+        nav {
+          display: flex;
+          flex-direction: column;
+          color: var(--clr-background-200);
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}

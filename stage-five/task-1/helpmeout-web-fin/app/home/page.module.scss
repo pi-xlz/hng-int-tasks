@@ -1,0 +1,50 @@
+.nav {
+  background: var(--clr-background-200);
+  padding: 3rem 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  background: var(--clr-background-200);
+  padding: 2rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.125rem;
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h1 {
+      font-family: var(--font-sora);
+      font-weight: 700;
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.main {
+  padding: 3rem 7rem;
+  background: var(--clr-background-200);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  h2 {
+    color: rgba(20, 20, 20, 0.8);
+    font-weight: 500;
+  }
+
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}

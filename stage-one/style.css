@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;700&family=Hind:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --clr-background-200: #fbfbfb;
+  --clr-background-100: #fdfdff;
+  --clr-primary-text: #010400;
+  --clr-primary-heading: #848484;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  color: var(--clr-primary-text);
+  background: var(--clr-background-100);
+  font-family: 'Expletus Sans', cursive;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile {
+  background: var(--clr-background-200);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.875rem;
+  border-radius: 15px;
+}
+
+.profile__image {
+  flex-basis: 100px;
+  aspect-ratio: 1/1;
+  /* height: 100px; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.profile__image img {
+  object-fit: cover;
+}
+
+.profile__name {
+  font-size: 1.5rem;
+}
+
+.profile__track {
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.profile__track span {
+  display: inline-block;
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  color: var(--clr-primary-heading);
+}
+
+.profile__url {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  color: var(--clr-primary-heading);
+  margin-top: 0.125rem;
+}
+
+.profile__url a {
+  font-family: 'Expletus Sans', cursive;
+  color: var(--clr-primary-text);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.time {
+  background: var(--clr-background-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 3rem 1.875rem;
+  border-radius: 15px;
+  font-size: 2.25rem;
+}

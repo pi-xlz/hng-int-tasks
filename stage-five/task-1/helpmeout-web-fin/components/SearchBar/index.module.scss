@@ -1,0 +1,24 @@
+.searchbar {
+  display: flex;
+  //   justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  min-width: 25rem;
+  padding: 1.5rem;
+  border: 1px solid var(--clr-border-100);
+  border-radius: 16px;
+  background: var(--clr-background-search-input);
+
+  .search-input {
+    border: transparent;
+    background: transparent;
+    font-size: 0.875rem;
+    font-family: inherit;
+    flex-basis: 100%;
+    outline: transparent;
+
+    &::placeholder {
+      color: var(--clr-background-search-input-placeholder);
+    }
+  }
+}

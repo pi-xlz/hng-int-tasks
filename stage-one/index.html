@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="profile">
+        <div class="profile__image" data-testid="slackDisplayImage">
+          <img src="profile.png" alt="killSwitch">
+        </div>
+        <div class="profile__wrapper">
+          <h1 class="profile__name" data-testid="slackUserName">killSwitch</h1>
+          <p class="profile__track" data-testid="myTrack"><span>TRACK:</span> Frontend</p>
+          <p class="profile__url" data-testid=“githubURL”>URL: <a
+              href="https://github.com/pi-xlz/hng-stage-one">Go to Repo!</a></p>
+        </div>
+      </div>
+      <div class="time">
+        <span class="time__utc-time" data-testid="currentUTCTime">Time</span>
+        <p class="time__day" data-testid="currentDayOfTheWeek">Monday</p>
+      </div>
+    </section>
+  </main>
+  <script src="/main.js"></script>
+</body>
+</html>

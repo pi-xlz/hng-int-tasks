@@ -1,0 +1,35 @@
+.emailinput {
+  padding: 1rem;
+  background: var(--clr-background-email-input);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.875rem;
+  border-radius: 16px;
+  border: 1px solid rgba(231, 231, 237, 1);
+
+  input {
+    background: transparent;
+    border: transparent;
+    outline: transparent;
+    font-size: var(--fs-sm);
+    min-width: 25rem;
+
+    &::placeholder {
+      color: rgba(67, 67, 67, 0.8);
+      font-family: var(--font-work_sans);
+    }
+  }
+
+  button {
+    background: rgba(96, 92, 132, 1);
+    border-radius: 11px;
+    outline: transparent;
+    border: none;
+    color: var(--clr-background-200);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+  }
+}

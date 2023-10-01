@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.logo__name {
+  color: var(--clr-primary-100);
+  font-family: var(--font-inter);
+  font-weight: 700;
+}
+
+.logo__name-scnd {
+  color: var(--clr-background-200);
+  font-family: var(--font-inter);
+  font-weight: 700;
+}

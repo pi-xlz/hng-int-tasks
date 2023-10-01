@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 7rem;
+  background: var(--clr-background-200);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 4rem;
+  font-weight: 500;
+}
+
+.navbar__cta {
+  font-size: var(--fs-sm);
+  color: var(--clr-primary-100);
+  font-weight: 600;
+}
