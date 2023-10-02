@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import Box from "@/components/box";
-import ChatBot from "@/components/chatbot";
-import { images } from "@/lib/data";
-import { useEffect, useState, useRef } from "react";
-import { gsap } from "gsap";
+import Box from '@/components/box';
+import ChatBot from '@/components/chatbot';
+import { images } from '@/lib/data';
+import { useEffect, useState, useRef } from 'react';
+import { gsap } from 'gsap';
 
 export default function Home() {
-  const [data, setData] = useState<string | undefined>("intro");
+  const [data, setData] = useState<string | undefined>('intro');
   const containerRef = useRef<HTMLDivElement>(null);
   const chatBotRef = useRef<HTMLDivElement>(null);
   const [isAnimationActive, setIsAnimationActive] = useState(false);
@@ -32,7 +32,7 @@ export default function Home() {
     gsap.to(chatbot?.lastElementChild!, {
       opacity: 0,
       scale: 0.5,
-      ease: "circ.out",
+      ease: 'circ.out',
       duration: 0.5,
     });
   };
@@ -51,7 +51,7 @@ export default function Home() {
     function onClick(e: MouseEvent) {
       setIsFirstTime(false);
       if (isAnimationActive) return;
-      setData(e.target.dataset.id);
+      setData(e.target?.dataset.id);
       const chatbot = chatBotRef.current;
       const rect = chatbot!.getBoundingClientRect();
       if (!initialPos) {
@@ -70,13 +70,13 @@ export default function Home() {
       timeline.to(chatbot, { x: newX + 10, y: newY + 10, duration: 0.5 });
       timeline.to(chatbot, {
         scale: 1.05,
-        ease: "power1.inOut",
+        ease: 'power1.inOut',
         duration: 0.5,
         onStart: function () {
           gsap.to(chatbot?.lastElementChild!, {
             opacity: 1,
             scale: 1,
-            ease: "circ.out",
+            ease: 'circ.out',
             duration: 0.5,
           });
         },
@@ -85,10 +85,10 @@ export default function Home() {
 
     const container = containerRef.current;
 
-    container?.addEventListener("click", onClick);
+    container?.addEventListener('click', onClick);
 
     return () => {
-      container?.removeEventListener("click", onClick);
+      container?.removeEventListener('click', onClick);
     };
   }, [isAnimationActive]);
 
@@ -100,9 +100,16 @@ export default function Home() {
         Hey there👋. These widgets are clickable and interactive. Do indulge and
         allow widgy-kun show you around.
       </div>
-      <div className="flex gap-4" ref={containerRef}>
+      <div
+        className="flex gap-4"
+        ref={containerRef}
+      >
         {images.map((item) => (
-          <Box imgPath={item.img} key={item.id} id={item.id} />
+          <Box
+            imgPath={item.img}
+            key={item.id}
+            id={item.id}
+          />
         ))}
       </div>
 
