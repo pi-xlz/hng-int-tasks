@@ -90,7 +90,7 @@ export default function Home() {
     return () => {
       container?.removeEventListener('click', onClick);
     };
-  }, [isAnimationActive]);
+  }, [isAnimationActive, isFirstTIme, initialPos]);
 
   console.log(data);
 
@@ -106,6 +106,7 @@ export default function Home() {
       >
         {images.map((item) => (
           <Box
+            key={item.id}
             imgPath={item.img}
             id={item.id}
           />
