@@ -48,7 +48,7 @@ export default function Home() {
       });
     }
 
-    function onClick(e: MouseEvent) {
+    function onClick(e: any) {
       setIsFirstTime(false);
       if (isAnimationActive) return;
       setData(e.target?.dataset.id);
@@ -107,7 +107,6 @@ export default function Home() {
         {images.map((item) => (
           <Box
             imgPath={item.img}
-            key={item.id}
             id={item.id}
           />
         ))}
