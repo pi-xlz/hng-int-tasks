@@ -7,6 +7,17 @@
         "default_popup": "index.html",
         "default_icon": "helpmeout.png"
     },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
     "icons": {
         "16": "helpmeout.png",
         "32": "helpmeout.png",
