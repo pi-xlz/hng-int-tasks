@@ -11,6 +11,11 @@ There is a lot to be desired, functionality wise.
 - Fully functional screen recording.
 - Backend API implementation(HelpMeOut web app)
 - Clean up task 2(visually and minor bug fixes)
+- Proper documentation for both tasks.
+- Proper routing of all pages of the HelpMeOut web app( You can temporary access all pages by appending to the url. See gif below).
+
+![chrome_NwEH9MkfzH](https://github.com/pi-xlz/hng-int-tasks/assets/104459898/154f2a5f-60b9-441e-856d-01c63298b053)
+
 
 
 ## Installation
