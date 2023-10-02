@@ -28,7 +28,7 @@ const Modal = ({ setShowModal }: Props) => {
           <p className={styles.request}>
             Would you need to view this video later? Save to your account now!
           </p>
-          <SaveButton />
+          <SaveButton setShowModal={setShowModal} />
           <p className={styles['create-account']}>
             Don't have an accout? <a href="#">Create account</a>
           </p>

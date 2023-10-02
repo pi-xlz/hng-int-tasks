@@ -6,11 +6,15 @@ import styles from './index.module.scss';
 
 interface Prop {
   isSaving?: boolean;
+  setShowModal?: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const SaveButton = ({ isSaving }: Prop) => {
+const SaveButton = ({ isSaving, setShowModal }: Prop) => {
   return (
-    <button className={styles.savebutton}>
+    <button
+      onClick={() => setShowModal?.((p) => !p)}
+      className={styles.savebutton}
+    >
       {isSaving ? (
         <>
           <div className={styles.spinner}>

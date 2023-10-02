@@ -83,7 +83,10 @@ const FilePage = () => {
             To ensure the availability and privacy of your video, we recommend
             saving it to your account.
           </h2>
-          <SaveButton isSaving={isSaving} />
+          <SaveButton
+            isSaving={isSaving}
+            setShowModal={setShowModal}
+          />
           <p className={styles['save-video__create-acct']}>
             Don't have an account? <a href="#">Create account</a>
           </p>
