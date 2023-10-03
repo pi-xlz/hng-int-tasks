@@ -22,7 +22,7 @@ There is a lot to be desired, functionality wise.
 
 These are the extension installation steps:
 
-- Download extension from this link: https://drive.google.com/drive/folders/1en_A6x6iyg4MwNFTSHAuYr57nCYaddiR?usp=drive_link
+- Download extension from this link: [https://drive.google.com/drive/folders/1en_A6x6iyg4MwNFTSHAuYr57nCYaddiR?usp=drive_link](https://drive.google.com/drive/folders/10dyq_yHJ0xXPhSTlbidzpdh9xFiKF7Ji?usp=sharing)
 
 
 ![chrome_b8nrz5Z08J](https://github.com/pi-xlz/hng-int-tasks/assets/104459898/f44ca40e-e68f-4817-9fbf-607c144eb0f3)
