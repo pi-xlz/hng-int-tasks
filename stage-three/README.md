@@ -8,7 +8,8 @@ Live site: [kairou.vercel.app](https://kairou.vercel.app/) -- Looks the best on 
 
 ## Screenshots
 
-![kairou](https://github.com/pi-xlz/hng_int_task/assets/104459898/3ac2677b-62bb-4ec0-8a49-de22545b3e7b)
+![screenshot](https://github.com/pi-xlz/hng-int-tasks/assets/104459898/99e37d58-bd7d-4b5e-96c1-9b42eec25d33)
+
 
 
 
@@ -33,14 +34,16 @@ Live site: [kairou.vercel.app](https://kairou.vercel.app/) -- Looks the best on 
 Enter your search query(i.e tag) and watch the magic.
 Tags show on hover(on desktop).
 
-  ![search](https://github.com/pi-xlz/hng_int_task/assets/104459898/a1caeb1e-0dda-43d2-ba91-52822b8748e1)
+  ![search](https://github.com/pi-xlz/hng-int-tasks/assets/104459898/5a299f29-d662-41dd-a61b-b1830c8faf51)
+
 
 
 
 ### Drag-Lock🔥:
 Drag and Drop while not signed in to see results.
 
-   ![drag-lock](https://github.com/pi-xlz/hng_int_task/assets/104459898/80678252-21d2-47bd-b51d-0574730eaa88)
+   ![drag-lock](https://github.com/pi-xlz/hng-int-tasks/assets/104459898/69e9d110-0358-4cd2-90a7-77423a6ff8b3)
+
 
 
 ### Login:
@@ -51,7 +54,8 @@ Email: 'user@example.com'
 Password: '1Password'
 ```
 
-  ![login](https://github.com/pi-xlz/hng_int_task/assets/104459898/72a61b22-9ffe-4d25-bd5f-8153b081ab6e)
+ ![auth](https://github.com/pi-xlz/hng-int-tasks/assets/104459898/42a58c0a-6ce9-460b-8aa7-22026e04057e)
+
 
 
 
